@@ -1,4 +1,5 @@
 # VOLUME example
 FROM ubuntu
-RUN apt-get update && apt-get install apache2 -y
+RUN apt-get update
+RUN DEBIAN_FRONTEND=noninteractive apt-get -yq install apache2
 VOLUME ["/var/log/apache2"]

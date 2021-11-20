@@ -1,0 +1,14 @@
+# host
+docker image build -t volume .
+docker container run volume
+docker container run --interactive --tty --name volume-container volume /bin/bash
+
+# container
+cd /var/log/apache2/
+ls -l
+exit
+
+# host
+docker container inspect volume-container
+docker volume inspect <volume-name>
+sudo ls -l /var/lib/docker/volumes/<volume-name>/_data
