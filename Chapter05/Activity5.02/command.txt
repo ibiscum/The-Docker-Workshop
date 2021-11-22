@@ -1,0 +1,8 @@
+docker-compose up --detach
+
+# browser
+http://0.0.0.0:8000/admin
+
+docker-compose ps
+docker volume ls
+docker-compose down

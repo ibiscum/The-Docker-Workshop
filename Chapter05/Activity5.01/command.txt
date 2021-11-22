@@ -1,0 +1,4 @@
+docker-compose up --detach
+docker-compose ps
+docker volume ls
+docker-compose down

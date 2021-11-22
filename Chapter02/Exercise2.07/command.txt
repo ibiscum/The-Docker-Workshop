@@ -3,3 +3,10 @@ docker image build -t expose-healthcheck .
 docker container run -p 80:80 --name expose-healthcheck-container -d expose-healthcheck
 docker container list
 docker container run --interactive --tty --name expose-healthcheck-container expose-healthcheck /bin/bash
+
+# container
+exit
+
+# host
+docker container stop expose-healthcheck-container
+docker container rm expose-healthcheck-container

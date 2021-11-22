@@ -1,0 +1,5 @@
+# host
+docker image build -t onbuild-child .
+docker container run -p 80:80 --name onbuild-child-container -d onbuild-child
+docker container stop onbuild-child-container
+docker container rm onbuild-child-container
