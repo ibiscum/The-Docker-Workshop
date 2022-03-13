@@ -1,5 +1,5 @@
 # This is my first Docker image
-FROM ubuntu 
+FROM debian:latest 
 LABEL maintainer=sathsara@mydomain.com 
 RUN apt-get update
 CMD ["The Docker Workshop"]

@@ -1,5 +1,5 @@
 # EXPOSE & HEALTHCHECK example
-FROM ubuntu
+FROM debian:latest
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get -yq install apache2
 RUN DEBIAN_FRONTEND=noninteractive apt-get -yq install lynx
