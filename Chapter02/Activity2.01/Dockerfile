@@ -1,5 +1,5 @@
-# Start with Ubuntu base image
-FROM ubuntu:18.04
+# Start with Debian base image
+FROM debian:latest
 
 # Set labels
 LABEL maintainer=sathsara
