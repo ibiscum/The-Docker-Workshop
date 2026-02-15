@@ -1,9 +1,4 @@
 # The Docker Workshop
-[![GitHub issues](https://img.shields.io/github/issues/PacktWorkshops/The-Docker-Workshop.svg)](https://github.com/PacktWorkshops/The-Docker-Workshop/issues)
-[![GitHub forks](https://img.shields.io/github/forks/PacktWorkshops/The-Docker-Workshop.svg)](https://github.com/PacktWorkshops/The-Docker-Workshop/network)
-[![GitHub stars](https://img.shields.io/github/stars/PacktWorkshops/The-Docker-Workshop.svg)](https://github.com/PacktWorkshops/The-Docker-Workshop/stargazers)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/PacktWorkshops/The-Docker-Workshop/pulls)
-
 This is the repository for [The Docker Workshop](https://www.amazon.com/Docker-Workshop-containers-effectively-development/dp/1838983449/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1611064488&sr=1-1&utm_source=github&utm_medium=repository&utm_campaign=9781838983444&utm_term=Docker&utm_content=The%20Docker%20Workshop), published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the course from start to finish.
 
 ## Requirements and Setup
@@ -15,7 +10,7 @@ To get started with the project files, you'll need to:
 * Install Docker
 
 ## About The Docker Workshop
-With the help of top-notch examples and activities, [The Docker Workshop](https://www.amazon.com/Docker-Workshop-containers-effectively-development/dp/1838983449/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1611064488&sr=1-1&utm_source=github&utm_medium=repository&utm_campaign=9781838983444&utm_term=Docker&utm_content=The%20Docker%20Workshop) workshop helps you to get practical with Docker containers. You’ll learn its usage, advantages, and best practices to make the software deployment process smoother.	
+With the help of top-notch examples and activities, [The Docker Workshop](https://www.amazon.com/Docker-Workshop-containers-effectively-development/dp/1838983449/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1611064488&sr=1-1&utm_source=github&utm_medium=repository&utm_campaign=9781838983444&utm_term=Docker&utm_content=The%20Docker%20Workshop) workshop helps you to get practical with Docker containers. You’ll learn its usage, advantages, and best practices to make the software deployment process smoother.
 
 ## What you will learn
 * Get a solid understanding of how Docker containers work

@@ -1,5 +1,9 @@
 # VOLUME example
-FROM debian:latest
-RUN apt-get update
-RUN DEBIAN_FRONTEND=noninteractive apt-get -yq install apache2
+FROM debian:13.3
+
+RUN apt-get update && \
+  DEBIAN_FRONTEND=noninteractive apt-get -yq install --no-install-recommends apache2=2.4.66-1~deb13u1 && \
+  apt-get -y clean && \
+  rm -rf /var/lib/apt/lists/*
+
 VOLUME ["/var/log/apache2"]
