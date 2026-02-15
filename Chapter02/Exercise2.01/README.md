@@ -7,7 +7,5 @@
     docker image tag $(docker image ls --quiet postgres:14) my-tagged-image:v1.0
     docker image build .
     docker image list
-    docker image tag <image id> my-tagged-image:v1.0
-    docker image list
     docker image build -t my-tagged-image:v2.0 .
     docker image list

@@ -1,4 +1,6 @@
 # The Docker Workshop - Chapter 02 - Exercise 2.03
 
-docker image build -t env-arg --build-arg TAG=19.04 .
-docker container run env-arg
+docker run --rm -i hadolint/hadolint < Dockerfile
+
+docker image build -t exercise2.03:1.0 --build-arg TAG=13.3 .
+docker container run exercise2.03:1.0

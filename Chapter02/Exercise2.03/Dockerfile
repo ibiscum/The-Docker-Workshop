@@ -1,5 +1,5 @@
 # ENV and ARG example
-ARG TAG=latest
+ARG TAG=13.3
 
 FROM debian:$TAG
 

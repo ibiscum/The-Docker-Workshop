@@ -1,2 +1,0 @@
-docker image build -t workdir-copy-add .
-docker container run workdir-copy-add
