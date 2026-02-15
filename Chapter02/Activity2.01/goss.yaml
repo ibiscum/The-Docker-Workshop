@@ -18,7 +18,7 @@ port:
   tcp:80:
     listening: true
     ip:
-    - 0.0.0.0
+      - 0.0.0.0
 process:
   apache2:
     running: true

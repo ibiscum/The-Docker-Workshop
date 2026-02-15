@@ -10,9 +10,9 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Install Apache, PHP, and other packages
 RUN apt-get update && \
-    apt-get -y install apache2 \
-    php \ 
-    curl
+  apt-get -y install apache2 \
+  php \ 
+  curl
 
 # Copy all php files to the Docker image
 COPY *.php /var/www/html
