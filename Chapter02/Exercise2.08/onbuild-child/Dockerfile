@@ -1,2 +1,2 @@
 # ONBUILD example
-FROM onbuild-parent
+FROM exercise2.08-onbuild-parent:1.0

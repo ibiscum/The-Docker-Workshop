@@ -1,4 +1,4 @@
-# The Docker Workshop - Chapter 02 - Exercise 2.05
+# The Docker Workshop - Chapter 02 - Exercise 2.06
 
     docker run --rm -i hadolint/hadolint < Dockerfile
 

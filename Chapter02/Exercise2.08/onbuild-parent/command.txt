@@ -1,6 +1,0 @@
-# host
-docker image build -t onbuild-parent .
-docker container run -p 80:80 --name onbuild-parent-container -d onbuild-parent
-docker container list
-docker container stop onbuild-parent-container
-docker container rm onbuild-parent-container
