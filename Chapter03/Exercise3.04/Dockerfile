@@ -1,4 +1,4 @@
 FROM scratch
 
-ADD test /
+COPY test /
 CMD ["/test"]
