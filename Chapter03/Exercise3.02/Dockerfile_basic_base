@@ -1,5 +1,4 @@
-FROM alpine
+FROM alpine:3.21
 
-RUN apk update && apk add wget curl
-
-RUN wget -O test.txt https://github.com/PacktWorkshops/The-Docker-Workshop/raw/master/Chapter3/Exercise3.02/100MB.bin
+RUN apk update && apk add wget=1.25.0-r0 curl=8.14.1-r2 --no-cache && rm -rf /var/cache/apk/*
+RUN wget -q -O test.txt https://github.com/ibiscum/The-Docker-Workshop/raw/refs/heads/main/Chapter03/Exercise3.02/100MB.bin

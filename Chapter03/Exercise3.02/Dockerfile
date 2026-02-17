@@ -1,6 +1,6 @@
-FROM basic-base
+FROM exercise3.02-basic-base:2.0
 
-CMD mkdir -p /var/www/html/
+CMD ["mkdir", "-p", "/var/www/html/"]
 
 WORKDIR /var/www/html/
 

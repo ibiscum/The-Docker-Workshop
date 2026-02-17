@@ -7,8 +7,8 @@ package:
   curl:
     installed: true
     versions:
-    - 7.80.0-r0
+    - 8.14.1-r2
   wget:
     installed: true
     versions:
-    - 1.21.2-r2
+    - 1.25.0-r0
