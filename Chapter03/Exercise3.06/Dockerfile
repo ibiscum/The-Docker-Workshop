@@ -1,6 +1,7 @@
-FROM new_busybox:ver_1
+FROM exercise3.05:2.0
 
-RUN echo "#!/bin/sh\n" > /version.sh
-RUN echo "echo \"This is Version 2 of our service\"" >> /version.sh
+RUN printf "#!/bin/sh\n" > /version.sh && \
+    printf "echo \"This is version 1 of our service\"" >> /version.sh && \
+    chmod +x /version.sh
 
 ENTRYPOINT ["sh", "/version.sh"]

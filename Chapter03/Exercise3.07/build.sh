@@ -1,9 +1,10 @@
+#!/usr/bin/env bash
 set -ex
 
-USER=<your_user_name>
+USER=${1:-$(whoami)}
 SERVICENAME=basic-app
 
-version=`cat VERSION`
+version=$(cat VERSION)
 echo "version: $version"
 
-docker build -t $USER/$SERVICENAME:$version .
+docker build -t "$USER"/$SERVICENAME:"$version" .
