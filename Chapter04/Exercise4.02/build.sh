@@ -1,17 +1,17 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 echo "Creating welcome builder image"
 
-docker image build -t welcome-builder:v1 -f Dockerfile.build .
+docker image build -t exercise4.02-builder:v1 -f Dockerfile.build .
 
-docker container create --name welcome-builder-container welcome-builder:v1
+docker container create --name exercise4.02-builder-container exercise4.02-builder:v1
 
-docker container cp welcome-builder-container:/myapp/welcome .
+docker container cp exercise4.02-builder-container:/myapp/welcome .
 
-docker container rm -f welcome-builder-container
+docker container rm -f exercise4.02-builder-container
 
 echo "Creating welcome runtime image"
 
-docker image build -t welcome-runtime:v1 .
+docker image build -t exercise4.02-runtime:v1 .
 
 rm welcome
