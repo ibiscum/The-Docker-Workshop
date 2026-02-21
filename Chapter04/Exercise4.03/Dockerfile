@@ -1,6 +1,6 @@
 FROM golang:latest AS builder
 WORKDIR /myapp
-COPY welcome.go .
+COPY go.mod welcome.go ./
 RUN go build -o welcome .
 
 FROM scratch

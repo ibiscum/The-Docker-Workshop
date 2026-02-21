@@ -29,6 +29,6 @@ indent_style = space
 indent_size = 2
 
 # Matches the exact files either package.json or .travis.yml
-[{package.json,Dockerfile,*.yml,*.yaml}]
+[{package.json,Dockerfile,*.yml,*.yaml,*.go}]
 indent_style = space
 indent_size = 2
