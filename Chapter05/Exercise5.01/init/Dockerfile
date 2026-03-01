@@ -1,6 +1,6 @@
-FROM busybox
+FROM busybox:1.37.0-glibc
 
-ADD prepare.sh /usr/bin/prepare.sh
+COPY prepare.sh /usr/bin/prepare.sh
 RUN chmod +x /usr/bin/prepare.sh
 
-ENTRYPOINT ["sh", "/usr/bin/prepare.sh"] 
+ENTRYPOINT ["sh", "/usr/bin/prepare.sh"]
