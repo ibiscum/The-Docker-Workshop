@@ -1,17 +1,16 @@
 # Use root/example as user/password credentials
-version: '3.1'
+name: exercise7-04
 
 services:
+  adminer:
+    image: adminer:5.4.2
+    ports:
+      - '127.0.0.1:8080:8080'
+    restart: always
 
   db:
-    image: mysql
-    command: --default-authentication-plugin=mysql_native_password
-    restart: always
+    image: mysql:8.0.45-debian
     environment:
       MYSQL_ROOT_PASSWORD: example
-
-  adminer:
-    image: adminer
+    command: --default-authentication-plugin=mysql_native_password
     restart: always
-    ports:
-      - 8080:8080
