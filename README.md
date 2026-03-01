@@ -1,4 +1,8 @@
 # The Docker Workshop
+
+[![CodeQL](https://github.com/ibiscum/The-Docker-Workshop/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/ibiscum/The-Docker-Workshop/actions/workflows/github-code-scanning/codeql)
+[![Dependabot Updates](https://github.com/ibiscum/The-Docker-Workshop/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/ibiscum/The-Docker-Workshop/actions/workflows/dependabot/dependabot-updates)
+
 This is the repository for [The Docker Workshop](https://www.amazon.com/Docker-Workshop-containers-effectively-development/dp/1838983449/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1611064488&sr=1-1&utm_source=github&utm_medium=repository&utm_campaign=9781838983444&utm_term=Docker&utm_content=The%20Docker%20Workshop), published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the course from start to finish.
 
 ## Requirements and Setup
