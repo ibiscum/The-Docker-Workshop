@@ -1,29 +1,27 @@
-version: "3"
-
+name: activity5-02
 services:
-
   db:
-    image: postgres
+    image: postgres:18.3-alpine
     volumes:
       - db_data:/var/lib/postgresql/data/
     environment:
       - POSTGRES_PASSWORD=docker
 
-  web:
-    image: packtworkshops/the-docker-workshop:chapter5-pta-web
-    volumes:
-      - static_data:/service/static
-    depends_on:
-      - db
-
   nginx:
     image: packtworkshops/the-docker-workshop:chapter5-pta-nginx
+    depends_on:
+      - web
     volumes:
       - static_data:/service/static
     ports:
-      - 8000:80
+      - '127.0.0.1:8080:80'
+
+  web:
+    image: packtworkshops/the-docker-workshop:chapter5-pta-web
     depends_on:
-      - web
+      - db
+    volumes:
+      - static_data:/service/static
 
 volumes:
   db_data:
