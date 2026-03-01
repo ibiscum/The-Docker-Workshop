@@ -14,7 +14,7 @@ services:
     volumes:
       - static_data:/service/static
     ports:
-      - '127.0.0.1:8080:80'
+      - '0.0.0.0:8080:80'
 
   web:
     image: packtworkshops/the-docker-workshop:chapter5-pta-web
