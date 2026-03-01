@@ -1,37 +1,35 @@
-version: "3"
-
+name: exercise5-03
 services:
-
   clean:
-    image: busybox
-    command: "rm -rf /static/index.html"
+    image: busybox:1.37.0-glibc
     volumes:
-      - static:/static 
+      - static:/static
+    command: "rm -rf /static/index.html"
 
   init:
-    image: busybox
-    command: "sh -c 'echo This is from init container >> /static/index.html'"
-    volumes:
-      - static:/static 
+    image: busybox:1.37.0-glibc
     depends_on:
-    - "clean"
+      - "clean"
+    volumes:
+      - static:/static
+    command: "sh -c 'echo This is from init container. >> /static/index.html'"
 
   pre:
-    image: busybox
-    command: "sh -c 'echo This is from pre container >> /static/index.html'"
-    volumes:
-      - static:/static 
+    image: busybox:1.37.0-glibc
     depends_on:
-    - "init"
+      - "init"
+    volumes:
+      - static:/static
+    command: "sh -c 'echo This is from pre container. >> /static/index.html'"
 
   server:
-    image: nginx
-    volumes:
-      - static:/usr/share/nginx/html  
-    ports:
-      - "8080:80"
+    image: nginx:1.25.3-alpine
     depends_on:
-    - "pre"
+      - "pre"
+    volumes:
+      - static:/usr/share/nginx/html
+    ports:
+      - '127.0.0.1:8080:80'
 
 volumes:
   static:
