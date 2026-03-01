@@ -1,3 +1,4 @@
+name: exercise5-01
 services:
 
   init:
@@ -7,10 +8,10 @@ services:
       - static:/data
 
   server:
-    image: nginx
+    image: nginx:1.25.3-alpine
     volumes:
       - static:/usr/share/nginx/html
     ports:
-      - "8080:80"
+      - '127.0.0.1:8080:80'
 volumes:
   static:
