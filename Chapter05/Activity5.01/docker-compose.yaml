@@ -21,7 +21,7 @@ services:
       WORDPRESS_DB_PASSWORD: password
       WORDPRESS_DB_NAME: db
     ports:
-      - '127.0.0.1:8080:80'
+      - '127.0.0.1:9090:80'
     restart: always
 
 volumes:

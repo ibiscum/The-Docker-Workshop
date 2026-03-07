@@ -1,0 +1,8 @@
+name: chapter08-exercise8-02
+services:
+  redis:
+    image: "redis:8.6-alpine3.23"
+  web:
+    build: .
+    ports:
+      - '127.0.0.1:5000:5000'

@@ -1,4 +1,4 @@
-# The Docker Workshop - Chapter 07 - Exercise 7.01
+# The Docker Workshop - Chapter 7 - Exercise 7.01
 
     docker container run --name testevents alpine:3.23.3 ping google.com
     docker container ls

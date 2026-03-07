@@ -2,3 +2,5 @@
 *.gz
 test
 welcome
+.venv
+__pycache__
