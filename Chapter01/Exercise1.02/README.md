@@ -1,4 +1,4 @@
-# The Docker Workshop - Chapter 01 - Exercise 1.02
+# The Docker Workshop - Chapter 1 - Exercise 1.02
 
     docker pull ubuntu:18.04
     docker pull ubuntu:19.04
@@ -20,5 +20,3 @@
     docker rm -f ubuntu2
     docker rmi $(docker images --quiet ubuntu:19.04)
     docker rmi $(docker images --quiet ubuntu:18.04)
-
-

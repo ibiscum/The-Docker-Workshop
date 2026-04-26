@@ -1,8 +1,0 @@
-file:
-  /myapp/welcome.go:
-    exists: true
-    mode: "0664"
-    owner: root
-    group: root
-    filetype: file
-    contains: []

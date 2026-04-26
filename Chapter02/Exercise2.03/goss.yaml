@@ -1,6 +1,0 @@
-file:
-  /etc/os-release:
-    exists: true
-    mode: "0777"
-    owner: root
-    group: root

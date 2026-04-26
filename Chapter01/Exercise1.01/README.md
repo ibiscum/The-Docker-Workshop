@@ -1,4 +1,4 @@
-# The Docker Workshop - Chapter 01 - Exercise 1.01
+# The Docker Workshop - Chapter 1 - Exercise 1.01
 
     docker run hello-world
     docker ps
