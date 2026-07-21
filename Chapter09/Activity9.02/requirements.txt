@@ -1,6 +1,6 @@
 asgiref==3.11.1
 Django==6.0.6
-Pillow==12.2.0
+Pillow==12.3.0
 pytz==2026.1.post1
 sqlparse==0.5.5
 psycopg2==2.9.12
